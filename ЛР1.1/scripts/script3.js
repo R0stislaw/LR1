@@ -1,10 +1,6 @@
 var monthInput = prompt("Введіть номер місяця від 1 до 12:");
-
 if (/[^0-12]/.test(monthInput)) {
-  alert("Некоректний номер місяця. Введіть число від 1 до 12.");
-} else {
   var monthNumber = parseInt(monthInput);
-
   if (!isNaN(monthNumber) && monthNumber >= 1 && monthNumber <= 12) {
     var seasons = ["Зима", "Весна", "Літо", "Осінь"];
     var rightAnswer = "";
@@ -18,9 +14,8 @@ if (/[^0-12]/.test(monthInput)) {
     } else {
       rightAnswer = seasons[0];
     }
-
     alert(`Пора року - ${rightAnswer}`);
-  } else {
-    alert("Некоректний номер місяця. Введіть число від 1 до 12.");
   }
+} else {
+  alert("Некоректний номер місяця. Введіть число від 1 до 12.");
 }
