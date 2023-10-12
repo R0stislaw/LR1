@@ -1,5 +1,5 @@
 var table = document.getElementById("table");
-var tableHTML = "<tr><th></th>";
+var tableHTML = "<tr><th>Х</th>";
 for (var i = 1; i <= 10; i++) {
   tableHTML += `<th>${i}</th>`;
 }

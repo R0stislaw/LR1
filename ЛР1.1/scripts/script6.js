@@ -5,7 +5,7 @@ while (true) {
     break;
   }
   var nameParts = nameStudents.split(" ");
-  if (nameParts.length < 2) {
+  if (nameParts.length != 2) {
     alert(
       "Введено неправильний формат. Будь ласка, введіть ім'я та прізвище студента."
     );
